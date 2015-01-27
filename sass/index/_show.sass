@@ -1,60 +1,8 @@
-.mark-good
-  width: 23px
-  height: 10px
-  font-size: 12px
-  color: #ffffff
-  text-align: right
-  padding: 5px 6px 5px 3px
-  position: relative
-  top: -114px
-  right: -3px
-  float: right
-  border-radius: 3px
-  & .triangle,.triangle-yellow
-    width: 0
-    height: 0
-    position: relative
-    right: 11px
-    top: -5px
-    border-top: 10px solid rgba(255,255,255,0)
-    border-bottom: 10px solid rgba(255,255,255,0)
-    border-right: 9px solid rgb(255, 79, 115)
-  & .triangle-yellow
-    border-right: 9px solid rgb(255,188,83)
-  & .jinghua
-    position: relative
-    width: 40px
-    font-size: 12px
-    left: -15px
-    top: -22px
-
-#marrow
-  background-color: rgb(255, 79, 115)
-#recommendation
-  background-color: rgb(255,188,83)
-#none
-  opacity: 0
-.portrait
-  position: relative
-  left: 5px
-  top: -35px
-  height: 37px
-  width: 110px
-  & img
-    width: 32px
-    height: 32px
-    border: 2px solid #ffffff
-    border-radius: 100px
-    box-shadow: 0 0 1px gray
-  & div
-    font-size: 11px
-    color: #ffffff
-    margin: -29px 0 0 40px
 #show
   margin: 0
   padding: 12px 10px 0
   & .box
-    margin: auto auto 20px auto
+    margin: auto auto 10px auto
     height: 169px
     width: 300px
     background-color: #ffffff
@@ -68,6 +16,62 @@
       position: relative
       left: 8px
       top: -30px
+
+.mark-good,.recommendation
+  width: 32px
+  height: 21px
+  position: relative
+  right: -3px
+  top: -110px
+  line-height: 21px
+  font-size: 12px
+  color: #ffffff
+  text-align: center
+  float: right
+  border-radius: 0 3px 3px 0
+  &:before
+    content: ""
+    width: 0
+    height: 0
+    font-size: 0
+    position: relative
+    right: 14px
+    top: -4px
+    border-top: 10px solid rgba(255,255,255,0)
+    border-bottom: 10px solid rgba(255,255,255,0)
+    border-right: 8px solid rgb(255, 79, 115)
+.recommendation
+  &:before
+    position: relative
+    right: 15px
+    border-top: 10px solid rgba(255,255,255,0)
+    border-bottom: 10px solid rgba(255,255,255,0)
+    border-right: 9px solid rgb(255,188,83)
+
+.jinghua,.tuijian
+  margin-left: -13px
+#marrow
+  background-color: rgb(255, 79, 115)
+#recommendation
+  background-color: rgb(255,188,83)
+
+.portrait
+  position: relative
+  left: 5px
+  top: -35px
+  height: 37px
+  width: 110px
+  img
+    width: 32px
+    height: 32px
+    border: 2px solid #ffffff
+    border-radius: 100px
+    box-shadow: 0 0 1px gray
+  & div
+    font-size: 11px
+    color: #ffffff
+    margin: -29px 0 0 40px
+    text-shadow: 0 0 2px gray
 
 [name="show-img"]
   width: 300px

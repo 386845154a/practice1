@@ -1,6 +1,6 @@
 window.onload=function(){
   var ico=document.getElementById("ico");
-  var btn=ico.getElementsByTagName("a");
+  var btn=ico.getElementsByTagName("span");
   var slide=document.getElementById("slide");
   var ul=slide.getElementsByTagName("ul");
   var li=ul[0].getElementsByTagName("li");
@@ -14,7 +14,7 @@ window.onload=function(){
     }
   }
   var curIndex=0;
-  var timeInterval=1000;
+  var timeInterval=6000;
   setInterval(change,timeInterval);
   function change(){
     if(curIndex==btn.length){
@@ -40,9 +40,6 @@ window.onload=function(){
     ul[0].style.left=-index*baseWidth+"px"
   }
 }
-
-
-
 
 
 

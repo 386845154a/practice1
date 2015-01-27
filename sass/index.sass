@@ -3,66 +3,29 @@
 @import "framwork/footer"
 @import "index/show"
 @import "index/discovery"
+@import "index/nav"
 
-body
+*
   padding: 0
   margin: 0
+
+body
   width: $width
-#bars
-  float: right
-  margin:
-    right: $right
-    top: -26px
+  position: relative
 
-#navigation
-  width: $width
-  padding: 65px 0 0
-
-.banner-box
-  background-color: white
-  margin: auto
-  width: 320px
-  height: 122px
-
-#nav
-  width: 320px
-  height: 97px
-  margin: auto
-  background-color: white
-  & ul
-    list-style: none
-    padding: 0
-    margin: 0
-    & li
-      text-align: center
-      display: inline-block
-      font-size: 12px
-      margin: 0
-      padding: 13px 6px 13px 17px
-    & a
-      display: inline-block
-      line-height: 30px
-      & i
-        border-radius: 200px
-        width: 22px
-        height: 22px
-        padding: 13px 13px
-        font-size: 21px
-        border: none
-        outline: none
-        color: #ffffff
-
-#chat
-  background-color: $chat_color
-#question
-  background-color: $queston_color
-#diary
-  background-color: $diary_color
-#expert
-  background-color: $expert_color
-
+h1
+  margin: 26px 0 0
+  text-align: center
+  background: url(../images/title.png) center no-repeat
+  background-size: 47px 24px
+  font:
+    weight: normal
+    size: $header-font-size
+  text-indent: -9999px
 
 #article
+  position: absolute
+  width: $width
   padding-bottom: 50px
   background-color: rgb(232,232,232)
 

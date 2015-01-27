@@ -1,114 +1,109 @@
 ﻿<!DOCTYPE html>
-<html>
-<head lang="zh-cmn-Hans">
+<html lang="zh-cmn-Hans">
+<head>
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
   <meta charset="UTF-8">
   <title>讨论组</title>
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>
-  <link rel="stylesheet" type="text/css" href="css/discussion.css" media="screen, projection"/>
+  <link rel="stylesheet" href="css/discussion.css" media="screen, projection"/>
 </head>
-<header id="header">
-  <h1>
-    讨论组
-  </h1>
-  <button type="button" id="bars" class="fa fa-bars"></button>
-  <button type="button" id="edit" class="fa fa-edit"></button>
-</header>
-<section id="section">
-  <h2>
-    人气讨论组<mark id="mark-hot">HOT</mark>
-    <a id="h2-more">更多></a>
-  </h2>
-  <div class="hr"></div>
-  <article id="hot-article">
+<body>
+  <header id="header">
+    <h1>讨论组</h1>
+    <button type="button" id="bars" class="fa fa-bars"></button>
+    <button type="button" id="edit" class="fa fa-edit"></button>
+  </header>
+  <div id="content">
+    <p class="group-title">
+      人气讨论组<mark id="mark-hot">HOT</mark>
+      <a id="more">更多></a>
+    </p>
     <div id="discussion-groups">
-      <table>
-        <tr>
-          <td class="r-col-odd">
-            <img src="images/portrait3.jpg"  title="double-eyes"/>
-          </td>
-          <td class="r-col-even">
-            <div class="group-name">双眼皮</div>
-            <div class="number">3368帖</div>
-          </td>
-          <td class="r-col-odd">
-            <img src="images/portrait3.jpg" title="double-eyes"/>
-          </td>
-          <td class="r-col-even-four">
-            <div class="group-name">双眼皮</div>
-            <div class="number">3368帖</div>
-          </td>
-        </tr>
-        <tr>
-          <td class="r-col-odd">
-            <img src="images/portrait3.jpg" title="beauty"/>
-          </td>
-          <td class="r-col-even">
-            <div class="group-name">胸部美美滴</div>
-            <div class="number">3368帖</div>
-          </td>
-          <td class="r-col-odd">
-            <img src="images/portrait3.jpg" title="beauty"/>
-          </td>
-          <td class="r-col-even-four">
-            <div class="group-name">胸部美美滴</div>
-            <div class="number">3368帖</div>
-          </td>
-        </tr>
-        <tr id="row-three">
-          <td>
-            <img src="images/portrait3.jpg" title="thin"/>
-          </td>
-          <td  class="col-even">
-            <div class="group-name">肚子立刻瘦</div>
-            <div class="number">3368帖</div>
-          </td>
-          <td  class="col-odd">
-            <img src="images/portrait3.jpg" title="thin"/>
-          </td>
-          <td>
-            <div class="group-name">肚子立刻瘦</div>
-            <div class="number">3368帖</div>
-          </td>
-        </tr>
-      </table>
+      <div class="group">
+        <ul class="outer">
+          <li class="first-column">
+            <ul class="inner">
+              <li>
+                <img src="images/portrait3.jpg" alt="双眼皮"/>
+                <div class="group-list">
+                  <span class="group-name">双眼皮</span><br/>
+                  <span class="number">3368帖</span>
+                </div>
+              </li>
+              <li>
+                <img src="images/portrait3.jpg" alt="美美滴"/>
+                <div class="group-list">
+                  <span class="group-name">胸部美美滴</span><br/>
+                  <span class="number">3368帖</span>
+                </div>
+              </li>
+              <li>
+                <img src="images/portrait3.jpg" alt="立刻瘦"/>
+                <div class="group-list">
+                  <span class="group-name">肚子立刻瘦</span><br/>
+                  <span class="number">3368帖</span>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="second-column">
+            <ul class="inner">
+              <li>
+                <img src="images/portrait3.jpg" alt="双眼皮"/>
+                <div class="group-list">
+                  <span class="group-name">双眼皮</span><br/>
+                  <span class="number">3368帖</span>
+                </div>
+              </li>
+              <li>
+                <img src="images/portrait3.jpg" alt="美美滴"/>
+                <div class="group-list">
+                  <span class="group-name">胸部美美滴</span><br/>
+                  <span class="number">3368帖</span>
+                </div>
+              </li>
+              <li>
+                <img src="images/portrait3.jpg" alt="立刻瘦"/>
+                <div class="group-list">
+                  <span class="group-name">肚子立刻瘦</span><br/>
+                  <span class="number">3368帖</span>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="hr"></div>
-  </article>
-  <article id="talk-about">
-    <h3>大家都在聊</h3>
-    <div class="hr"></div>
-  </article>
-  <article id="information">
-    <p class="top-information"><mark class="mark-setTop">置顶</mark>整形是个人的幸福而存在的！</p>
-    <div class="hr"></div>
-    <p class="top-information"><mark class="mark-setTop">置顶</mark>整形是个人的幸福而存在的！</p>
-    <div class="hr"></div>
-    <div id="mark-good"></div>
-    <div id="mark-text">精</div>
-    <p id="description">医生你好 我今年30岁 大概在18岁以后开始长斑。</p>
-    <p><img id="talk-img1" src="images/portrait1.jpg"/>
-    <img id="talk-img2" src="images/portrait2.jpg"/>
-    <img id="talk-img3" src="images/portrait3.jpg"/></p>
-  </article>
-</section>
-<footer id="footer">
-  <ul>
-    <li class="home-li">
-      <a href="index.html"><i id="home" class="fa fa-home"></i><br/>首页</a>
-    </li>
-    <li class="discuss-li">
-      <a href="discussion.html"><i id="discuss-icon" class="fa fa-twitch"></i><br/>讨论组</a>
-    </li>
-    <li class="micro-li">
-      <a href="#"><i id="micro-plastic" class="fa fa-tag"></i><br/>淘整形</a>
-    </li>
-    <li class="msg-li">
-      <a href="#"><i id="msg" class="fa fa-envelope-o"></i><br/>消息</a>
-    </li>
-    <li class="me-li">
-      <a href="posts.html"><i id="me"  class="fa fa-user"></i><br/>我</a>
-    </li>
-  </ul>
-</footer>
+    <p id="talk-about">大家都在聊</p>
+    <div id="information">
+      <p class="top-information"><mark class="mark-setTop">置顶</mark>整形是个人的幸福而存在的！</p>
+      <p class="top-information"><mark class="mark-setTop">置顶</mark>整形是个人的幸福而存在的！</p>
+      <div id="mark-good"></div>
+      <div id="mark-text">精</div>
+      <p id="description">医生你好 我今年30岁 大概在18岁以后开始长斑。</p>
+      <p><img id="talk-img1" src="images/portrait1.jpg"/>
+      <img id="talk-img2" src="images/portrait2.jpg"/>
+      <img id="talk-img3" src="images/portrait3.jpg"/></p>
+    </div>
+  </div>
+  <footer id="footer">
+    <ul>
+      <li>
+        <a href="./"><i id="home" class="fa fa-home"></i><br/>首页</a>
+      </li>
+      <li>
+        <a href="discussion.html"><i id="discuss-icon" class="fa fa-comment-o"></i><br/>讨论组</a>
+      </li>
+      <li>
+        <a href="#"><i id="micro-plastic" class="fa fa-tag"></i><br/>淘整形</a>
+      </li>
+      <li>
+        <a href="#"><i id="msg" class="fa fa-envelope-o"></i><br/>消息</a>
+      </li>
+      <li>
+        <a href="posts.html"><i id="me"  class="fa fa-user"></i><br/>我</a>
+      </li>
+    </ul>
+  </footer>
+</body>
 </html>

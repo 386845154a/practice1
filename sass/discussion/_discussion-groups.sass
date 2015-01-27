@@ -1,32 +1,57 @@
+.group-title
+  font:
+    size: 12px
+    weight: normal
+  color: rgb(84,84,84)
+  padding: $h_padding
+  border-bottom: 1px solid #cfcfcf
+#mark-hot
+  background-color: rgb(255,0,110)
+  padding: 1px 2px
+  margin: 3px 4px
+  color: $white
+  border-radius: 2px
+  font:
+    weight: normal
+    size: 8px
+
+#more
+  float: right
+  letter-spacing: 1px
+  color: rgb(158,158,158)
+  font-size: 12px
+
 #discussion-groups
   padding: 13px 15px
   background-color: #fff
-  & table
-    margin: auto
-    & tr
-      margin: 0
-      padding: 0
-.r-col-odd
-  padding: 0 8px 20px 0
-.r-col-even
-  padding: 0 31px 20px 0
-.col-even
-  padding-right: 31px
-.r-col-even-four
-  padding: 0 0 20px 0
-#discussion-groups table tr td img
-  width: 45px
-  height: 45px
-  border-radius: 100px
-
+  border-bottom: 1px solid #cfcfcf
+  & .group
+    width: 320px
+    margin: -2px auto -40px auto
+    & .outer
+      list-style: none
+      clear: both
+      & .first-column,.second-column
+        display: inline-block
+        & .inner
+          list-style: none
+          clear: both
+          li
+            margin-bottom: -20px
+            img
+              width: 45px
+              height: 45px
+              border-radius: 100px
+.first-column
+  width: 147px
+.group-list
+  position: relative
+  left: 53px
+  top: -43px
 .group-name
   font-size: 14px
   color: black
-
 .number
   font-size: 10px
   color: rgb(73,73,73)
   margin-top: 6px
-
-#row-three
-  padding-bottom: 0
